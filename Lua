@@ -136,7 +136,7 @@ function finity:addShadow(object, transparency)
 	shadow.Parent = object
 end
 
-function finity.new(isdark, gprojectName, thinProject)
+function finity.new(finitywindowtitle, isdark, gprojectName, thinProject)
 	local finityObject = {}
 	local self2 = finityObject
 	local self = finity
@@ -284,7 +284,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		ZIndex = 2,
 		Size = UDim2.new(1, -30, 0, 30),
 		Position = UDim2.new(0, 30, 0, 0),
-		Text = "Press '".. string.sub(tostring(self.ToggleKey), 14) .."' to hide this menu",
+		Text = "Press '".. string.sub(tostring(self.ToggleKey), 14) .."' to hide this menu | "..finitywindowtitle,
 		Font = Enum.Font.GothamSemibold,
 		TextSize = 13,
 		TextXAlignment = Enum.TextXAlignment.Left,
