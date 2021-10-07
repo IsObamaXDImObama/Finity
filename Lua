@@ -18,7 +18,6 @@
 					
 --]]
 
-local HttpService = game:GetService("HttpService")
 local finity = {}
 finity.gs = {}
 
@@ -217,7 +216,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	end)
 
 	self2.userinterface = self:Create("ScreenGui", {
-		Name = HttpService:GenerateGUID(true),
+		Name = "Novaline Hub",
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
