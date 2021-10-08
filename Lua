@@ -977,6 +977,14 @@ function finity.new(isdark, gprojectName, thinProject)
 							end
 						end
 
+                        function cheat:ClearOption()
+                            for index, optiontable in pairs(options) do
+                                options [index] = nil
+                            end
+                            
+                            refreshOptions()
+                        end
+
 						cheat.selected.Parent = cheat.dropdown
 						cheat.dropdown.Parent = cheat.container
 						cheat.list.Parent = cheat.container
